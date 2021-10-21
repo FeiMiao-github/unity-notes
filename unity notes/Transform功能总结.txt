@@ -1,0 +1,3 @@
+Transform 
+	提供了查找parent, root, child的功能
+	提供了改变position，rotation，scale的功能
