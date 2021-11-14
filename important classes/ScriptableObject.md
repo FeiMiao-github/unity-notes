@@ -1,0 +1,10 @@
+# ScriptableObject
+
+ScriptableObject 是一个数据容器，可以存储与class instances 无关的大量数据。ScriptableObject的其中一个主要场景是通过避免值得复制来减少项目的内存使用。如果你的项目中有一个prefab在绑定的脚本上存在大量不变的数据，这将非常有用。
+
+每次instantiate一个prefab，将会复制一份它的数据。与使用instantiate方法，存储复制的数据相比，可以使用ScriptableObject存储数据，然后通过prefab的引用访问它。这意味着在内存中只有一份数据的复制
+
+在编辑器编辑和运行时时，可以保存数据到ScriptableObject 
+
+在发布环境时，不能使用ScriptableObject 保存数据，但是可以使用在开发时保存到ScriptableObject时保存的数据
+
